@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url('images/cook1.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0; 
+            padding: 0; 
+        }
+        form {
+            color: rgba(234, 6, 52, 0.175);
+            position: absolute;
+            top: 20px;
+            left: calc(10%);
+            width: 200px;
+            background: rgba(255, 255, 255, 0.8); 
+            padding: 20px; 
+            border-radius: 8px; 
+        }
+        label {
+            color: #c20d0d; 
+            font-weight: bold; 
+        }
+        input[type="text"] {
+            width: 100%; 
+            padding: 8px; 
+            box-sizing: border-box; 
+        }
+        input[type="submit"] {
+            margin-top: 10px;
+        }
+    </style>
+    <script type="text/javascript">
+        function show_alert()
+        {
+       alert("Succesfully logged in!!");
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="fname"></label>
+        <input type="text" id="fname" name="fname" placeholder="First name"><br><br>
+        <label for="lname"></label>
+        <input type="text" id="lname" name="lname" placeholder="Last name"><br><br>
+        <label for="mail"></label>
+        <input type="text" id="mail" name="mail" placeholder="Mail Id"><br><br>
+        <input type="submit" onclick="show_alert()" value="Connect with Us">
+    </form>
+</body>
+</html>
